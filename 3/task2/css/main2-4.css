@@ -1,0 +1,35 @@
+*{
+	padding: 0;
+	margin: 0;
+
+}
+li{
+	list-style: none;
+}
+
+#contain{
+	margin: 100px auto;
+    position: relative;
+    text-align: center;
+    width: 500px;
+}
+
+#shuru{
+	font-size: 15px;
+    height: 30px;
+    width: 300px;
+}
+
+#tishi{
+	border: 1px #000 solid;
+	width: 300px;
+	text-align: left;
+	position: absolute;
+	left: 99px;
+	display: none;
+}
+
+.over{
+	background-color: #ccc;
+
+}

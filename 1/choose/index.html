@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用原生js实现单选多选</title>
+</head>
+<style type="text/css">
+	#mul-choose div{
+		padding-left: 30px;
+		height: 20px;
+		background: url('icon.gif') no-repeat;
+		background-position: top left;
+		cursor: pointer;
+	}
+	#one-choose div{
+		padding-left: 30px;
+		height: 20px;
+		background: url('radio.gif') no-repeat;
+		background-position: top left;
+		cursor: pointer;
+	}
+	ul{
+		list-style: none;
+	}
+	li{
+		margin-bottom:10px; 
+	}
+	#mul-choose div.choose,#one-choose div.choose{
+		background-position:bottom left;
+		color: red;
+	}
+</style>
+<body>
+<ul id="mul-choose">
+	<li><div>选择框1</div></li>
+	<li><div>选择框2</div></li>
+	<li><div>选择框3</div></li>
+	<li><div>选择框4</div></li>
+	<li><div>选择框5</div></li>
+	<li><div>选择框6</div></li>
+
+</ul>
+<ul id="one-choose">
+	<li><div>选择框1</div></li>
+	<li><div>选择框2</div></li>
+	<li><div>选择框3</div></li>
+	<li><div>选择框4</div></li>
+	<li><div>选择框5</div></li>
+	<li><div>选择框6</div></li>
+
+</ul>
+
+	
+</body>
+<script type="text/javascript">
+	var mul=document.getElementById('mul-choose');
+	var one=document.getElementById('one-choose');
+	var p=document.getElementById('test');
+	//mul.addEventListener('click',function(){alert(11111)},false)
+	function delegate(ele,tag,event,listener,extFn){
+		
+		var Fn=function(ev){
+				var event=ev||event;
+				var target=event.target||event.srcElement;
+				if(target.nodeName.toLowerCase()==tag){
+					listener(event,extFn);
+					
+				}
+			};
+		if(ele.addEventListener){
+			ele.addEventListener(event,Fn,false);
+
+		}
+		
+		else if(ele.attachEvent){
+			ele.attachEvent('on'+event,Fn);
+			
+		}
+		else{
+			ele["on" + event] = function(ev){
+			var oEvent=ev||event;
+			var target=oEvent.target||oEvent.srcElement;
+			if(target.nodeName.toLowerCase()==tag){
+			listener(oEvent,fn);
+			};
+    		}
+		}
+		
+	}
+	function choose(ev,fn){
+		var event=ev||event;
+		var target=event.target||event.srcElement;
+		if(fn)fn();
+		if(target.className==''){
+			target.className='choose';
+		}
+		else{
+			target.className='';
+		}
+		
+		//console.log(target.style)
+
+	}
+	function removeClass(){
+		var oDiv=one.getElementsByTagName('div');
+		//alert('tes')
+		for(var i=0;i<oDiv.length;i++){
+			oDiv[i].className='';
+		}
+	}
+	delegate(mul,'div','click',choose);
+	delegate(one,'div','click',choose,removeClass);
+	
+</script>
+</html>

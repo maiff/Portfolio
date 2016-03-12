@@ -1,0 +1,49 @@
+*{
+	padding: 0;
+	margin: 0 ;
+}
+
+
+#task2-3-container{
+	overflow: hidden;
+	width: 1000px;
+	height: 400px;
+	position: relative;
+}
+
+#task2-3-box{
+	position: absolute;
+	left: 0;
+	height: 400px;
+}
+
+#task2-3-box li{
+	width: 1000px;
+	height:400px;
+	list-style: none;
+	float: left;
+}
+
+#circle-box{
+	position: absolute;
+	bottom: 5px;
+	left:450px;
+
+}
+#circle-box li{
+	margin: 10px;
+	width: 10px;
+	height: 10px;
+	list-style: none;
+	border: 1px solid #fff;
+	border-radius:50%;
+	float: left;
+	cursor: pointer; 
+}
+
+
+
+.showCircle {
+    background-color: #fff;
+}
+

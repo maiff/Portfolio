@@ -1,0 +1,21 @@
+.contain{
+	border:1px solid #000;
+	width: 150px;
+	height: 500px;
+	float: left;
+	margin: 100px 200px;
+}
+
+
+.contain div{
+	background-color: red;
+	width: 150px;
+	height: 50px;
+	border: 1px solid #000;
+}
+
+.fade{
+	opacity: 0.5;
+}
+
+
