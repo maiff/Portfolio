@@ -1,0 +1,143 @@
+*{
+	padding: 0;
+	margin:0;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+html,body{
+	height: 100%;
+}
+body{
+	background: url('../src/background.png');
+	background-size:100% 100%;
+	-ms-background-size:100% 100%;
+	-o-background-size:100% 100%;
+	-webkit-background-size:100% 100%;
+}
+ul.account{
+	list-style: none;
+	text-align: right;
+	padding-top:30px;
+	margin-right: 120px;
+	color: #fff; 
+}
+.account li{
+	display: inline;
+	margin-left:20px; 
+}
+.account li img{
+	cursor: pointer;
+}
+
+.information{
+	list-style: none;
+	color: #fff;
+	margin: 50px 0 0 120px;
+}
+.information li{
+	display: inline-block;
+	margin-left: 40px;
+	line-height: 20px;
+}
+.icon{
+	display: inline-block;
+	width: 15px;
+	height:15px;
+	border-radius: 3px;
+	margin: 5px;
+	position: relative;
+	top: 7px;
+}
+.normal{
+	background: #fff;
+}
+.warning{
+	background: #dd4814;
+}
+.outline{
+	background: #bfbfbf;
+}
+.bed-tab{
+	margin:40px 120px 0 160px;
+	overflow: auto;
+}
+.tab-normal{
+	width: 140px;
+	height: 100px;
+	background: #fdfdfd;
+	opacity: 0.3;
+	border-radius: 6px;
+	float: left;
+	margin:0 14px 14px 0; 
+	position: relative;
+}
+.quiet{
+	opacity: 1;
+}
+.tab-icon{
+	width:20px;
+	height: 20px;
+}
+.purple{
+	color: #77216f;
+}
+.tab-normal p{
+	display: inline-block;
+}
+.bed-num{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.id{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.tab-icon-container{
+	position: absolute;
+	top: 40px;
+	left: 17px;
+}
+.tab-icon{
+	margin-right:17px; 
+}
+.bed-state{
+	position: absolute;
+	top: 70px;
+	width: 140px;
+	height: 30px;
+	overflow: hidden;
+}
+.bed-state p{
+	padding-left:16px; 
+}
+
+.bed-choice{
+	background:#77216f;
+	border-radius: 0 0 6px 6px;
+	color:#fff;
+
+}
+.disappear{
+	display: none !important;
+}
+.out{
+	position: absolute;
+	bottom: 5px;
+}
+.edit,.in{
+	position: absolute;
+	bottom: 4px;
+	right: 10px;
+}
+.white{
+	color: #fff;
+}
+.bed-warning{
+	background: #dd4814;
+	opacity: 1;
+}
+.bed-outline{
+	background: #bfbfbf;
+	opacity: 1;
+}
