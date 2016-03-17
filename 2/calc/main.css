@@ -45,6 +45,9 @@
 	position: absolute;
 	top: 50%;/*元素的顶部边界离父元素的的位置是父元素高度的一半*/
 	transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
 
 #monitior{
