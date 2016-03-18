@@ -107,9 +107,21 @@ ul.account{
 	width: 140px;
 	height: 30px;
 	overflow: hidden;
+
 }
 .bed-state p{
-	padding-left:16px; 
+	padding-left:16px;
+	line-height: 20px;
+
+}
+.bed-state p.status,p.state{
+	margin-left: 38px;
+}
+.bed-state p.heartbeat{
+	position: absolute;
+	left:16px;
+	
+	padding: 0 
 }
 
 .bed-choice{
@@ -121,9 +133,11 @@ ul.account{
 .disappear{
 	display: none !important;
 }
-.out{
+.bed-state p.out{
 	position: absolute;
 	bottom: 5px;
+	left: 13px;
+	padding: 0;
 }
 .edit,.in{
 	position: absolute;
