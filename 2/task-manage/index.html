@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+
+        }
+        li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+<div id="head"><h3>m-timer</h3></div>
+<div class="main">
+    <div class="left">
+        <h4>所有任务 (<span id="all_count">3</span>)</h4>
+
+        <h4 id="class-list">分类列表</h4>
+        <dl>
+            <dt class="l-class">test
+                (<span>3</span>)
+                <img src="img/close.png" alt="close"/>
+            </dt>
+            <dd>
+                task1(<span>1</span>)
+                <img src="img/close.png" alt="close"/>
+            </dd>
+            <dd class="l-chosed">
+                task2(<span>2</span>)
+                <img src="img/close.png" alt="close"/>
+            </dd>
+        </dl>
+        <div class="puls" id="new-class"><p>新建分类</p></div>
+    </div>
+    <div class="center-ture">
+        <p>没有任务被选中~</p>
+    </div>
+    <div class="center task2">
+        <div class="c-contain">
+        <ul class="c-title">
+            <li class="intro">所有</li>
+            <li>未完成</li>
+            <li >已完成</li>
+        </ul>
+        </div>
+        <dl class="c-ele">
+            <dt class="t-title">2016-1-25</dt>
+            <dd class="c-done">to-do-1</dd>
+            <dd class="c-chosed">to-do-3</dd>
+        </dl>
+        <div class="puls to-do"><p>新建任务</p></div>
+    </div>
+
+    <div class="center task1 disappear">
+        <div class="c-contain">
+            <ul class="c-title">
+                <li class="intro">所有</li>
+                <li>未完成</li>
+                <li >已完成</li>
+            </ul>
+        </div>
+        <dl class="c-ele">
+            <dt class="t-title">2016-1-22</dt>
+            <dd class="c-chosed">to-do-6</dd>
+        </dl>
+        <div class="puls to-do"><p>新建任务</p></div>
+    </div>
+    <div class="right-shadow">
+        <p>亲~什么都没选中哦~</p>
+    </div>
+    <div class="right to-do-3">
+        <div class="r-title">
+            <h3>to-do-3</h3>
+            <div>
+            <img src="img/icon_tick.png" alt="done" class="img1"/>
+            <img src="img/icon_write.png" alt="write" class="img2"/>
+            </div>
+        </div>
+        <div class="r-timer">任务日期:<time>2016-1-21</time></div>
+        <div class="r-content">
+            <p></p>
+        </div>
+    </div>
+    <div class="right to-do-6">
+        <div class="r-title">
+            <h3>to-do-6</h3>
+            <div>
+                <img src="img/icon_tick.png" alt="done" class="img1"/>
+                <img src="img/icon_write.png" alt="write" class="img2"/>
+            </div>
+        </div>
+        <div class="r-timer">任务日期:<time>2016-1-21</time></div>
+        <div class="r-content">
+            <p></p>
+        </div>
+    </div>
+    <div class="right to-do-1">
+        <div class="r-title">
+            <h3>to-do-1</h3>
+            <div>
+                <img src="img/icon_tick.png" alt="done" class="img1"/>
+                <img src="img/icon_write.png" alt="write" class="img2"/>
+            </div>
+        </div>
+        <div class="r-timer">任务日期:<time>2016-1-21</time></div>
+        <div class="r-content">
+            <p></p>
+        </div>
+    </div>
+    <div class="right-masker">
+        <div class="m-title">
+            <p>标题:</p>
+            <div class="m-b-container">
+                <input id='title' type="text">
+                <input type="button" value="确认" id="insure">
+                <input type="button" value="取消" id="quit">
+            </div>
+        </div>
+
+        <div class="m-content">
+            <textarea rows="90" cols="70" id="content">
+
+            </textarea>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/mini-query.js" charset="UTF-8"></script>
+<script src="js/main.js" charset="UTF-8" ></script>
+</html>

@@ -1,0 +1,264 @@
+#head{
+    width: 100%;
+    background-color: #DDDDDD;
+    height: 50px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    text-transform:uppercase;
+    color: #969696;
+    border-bottom: 1px solid #ccc;
+    z-index:999;
+}
+#head h3{
+    padding:10px;
+    cursor: default;
+}
+.main{
+    height: 100%;
+}
+.left{
+    width:300px;
+    background-color: #F2F2F2;
+    position: absolute;
+    top:50px;
+    bottom: 0;
+    left: 0;
+    border-right:1px solid #e4e4e4;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+
+
+.left h4{
+    font-weight: normal;
+    padding:10px;
+    cursor: pointer;
+}
+
+
+.left  dt{
+    padding:10px 0 10px 60px;
+    background: url("../img/folder.png") 40px no-repeat;
+    background-size: 15px ;
+
+    cursor:pointer;
+}
+.left dd,dt{
+    cursor:pointer;
+}
+.left dd {
+    background: url("../img/clipboard.png") no-repeat 60px center;
+    background-size: 15px;
+    padding: 10px 0 10px 80px;
+
+
+}
+
+.main .left .l-chosed{
+    background-color: #fff;
+}
+
+.puls{
+    background: url("../img/plus.png") no-repeat left;
+    background-size: 30px;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #999;
+    padding: 10px 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+.puls p{
+
+    margin-left: 30px;
+    padding-left: 70px;
+    font-size: 17px;
+}
+
+.center, .center-ture{
+    background-color: #fff;
+    width: 250px;
+    position: absolute;
+    border-right: 1px solid #999;
+    top:50px;
+    bottom: 0;
+    left: 300px;
+    border-left: 1px solid #999;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.center-ture p{
+    padding: 50px;
+}
+
+.c-contain{
+    background-color:#eee;
+    height: 40px;
+
+}
+.c-title{
+    padding: 5px 5px;
+}
+
+.c-title li{
+    display: inline-block;
+    cursor: pointer;
+
+    width: 60px;
+    text-align: center;
+    padding: 5px 5px;
+
+
+}
+
+.intro{
+    background-color: #fff;
+    border: 1px solid #999;
+}
+
+.c-ele dt{
+    padding: 10px;
+    cursor: pointer;
+}
+.c-ele dd{
+    padding: 15px 15px 15px 25px;
+    cursor: pointer;
+
+}
+
+.c-ele .t-title{
+    background-color: #FAFAEE;
+    padding-left:10px;
+
+}
+
+.c-done{
+    color:lawngreen;
+}
+
+.c-chosed{
+    background-color: #eee;
+}
+
+.right{
+    position: absolute;
+    left: 550px;
+    top:50px;
+    bottom:0;
+    right:0;
+}
+
+.r-title{
+    height: 45px;
+    background-color: #F2F2F2;
+    width: 100%;
+    position: relative;
+}
+.r-title h3{
+    padding: 10px;
+}
+.r-title img{
+    position: absolute;
+    top:10px;
+    width:20px;
+    height: 20px;
+    cursor: pointer;
+}
+.r-title .img1{
+    right:60px
+}
+.r-title .img2{
+    right:10px;
+}
+
+.r-timer{
+    height:30px;
+    background-color: #FAFAEE;
+    padding: 10px;
+}
+.r-content{
+    overflow: auto;
+}
+.r-content p{
+    padding: 10px;
+}
+
+.disappear{
+    display:none;
+}
+
+.left img{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 2px;
+    top: 13px;
+    opacity: 0;
+}
+
+.left dt,.left dd{
+    position: relative;
+}
+
+.right-masker{
+    position: absolute;
+    left: 550px;
+    top:50px;
+    bottom:0;
+    right:0;
+    display: none;
+    z-index: 99999;
+}
+.m-title{
+    height: 45px;
+    background-color: #F2F2F2;
+    width: 100%;
+    position: relative;
+
+}
+.m-title p{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+
+}
+.m-b-container{
+    position: absolute;
+    top: 10px;
+    left: 70px;
+}
+
+.m-content{
+    position: absolute;
+    bottom: 0;
+    top: 95px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+
+
+}
+
+.m-content textarea{
+    padding: 10px;
+    margin: 10px;
+    font-size:18px;
+}
+
+.right-shadow{
+    position: absolute;
+    left: 550px;
+    top:50px;
+    bottom:0;
+    right:0;
+}
+.right-shadow p{
+    padding: 10px;
+    font-size: 30px;
+}
+
