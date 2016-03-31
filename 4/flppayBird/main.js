@@ -68,6 +68,8 @@ var mainState = {
             this.bird.angle += 1; 
     },
     jump: function() {
+         if (this.bird.alive == false)
+         return;
     // Add a vertical velocity to the bird
         this.jumpSound.play(); 
         this.bird.body.velocity.y = -350;
@@ -81,8 +83,7 @@ var mainState = {
 
         // And start the animation
         animation.start(); 
-        if (this.bird.alive == false)
-         return; 
+        
     },
 
     // Restart the game
