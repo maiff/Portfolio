@@ -7,12 +7,14 @@ var mainState = {
         // That's where we load the images and sounds 
          game.load.image('bird', 'img/bird.jpg'); 
          game.load.image('pipe', 'img/pipe.png');
+         game.load.audio('jump', 'huba.wav');
     },
 
     create: function() { 
         // This function is called after the preload function     
         // Here we set up the game, display sprites, etc.  
          game.stage.backgroundColor = '#71c5cf';
+         this.jumpSound = game.add.audio('jump'); 
          this.pipes = game.add.group(); 
          this.timer = game.time.events.loop(1500, this.addRowOfPipes, this); 
          this.score = 0;
@@ -67,7 +69,9 @@ var mainState = {
     },
     jump: function() {
     // Add a vertical velocity to the bird
+        this.jumpSound.play(); 
         this.bird.body.velocity.y = -350;
+
          
     // Create an animation on the bird
         var animation = game.add.tween(this.bird);
