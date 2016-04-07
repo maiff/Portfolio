@@ -42,6 +42,7 @@ function init(arr,obj){
 						var dl=document.createElement('dl');
 						var a=document.createElement('a');
 						a.href=obj_choose[j].url;
+						a.target='_blank';
 						a.innerHTML=obj_choose[j].content;
 						dl.appendChild(a);
 						dd.appendChild(dl);	
