@@ -1,4 +1,4 @@
-document.querySelector('.main-contain').onclick=function(ev){
+document.getElementById('main-contain').onclick=function(ev){
 	var e=ev||event;
 	var target=e.target||e.srcElement;
 	if(target.nodeName=='H3'){
